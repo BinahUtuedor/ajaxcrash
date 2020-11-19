@@ -48,7 +48,7 @@
                 if(this.status == 200) {
                     var users = JSON.parse(this.response);
                     var output = '';
-                    for(var i in users) {
+                    for(let i in users) {
                         output += '<ul>' + 
                         '<li>ID: '+users[i].id+ '</li>' +
                         '<li>Name: '+users[i].name+ '</li>' +
